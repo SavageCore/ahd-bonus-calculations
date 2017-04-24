@@ -6,6 +6,7 @@
 // @author       SavageCore
 // @include      http*://awesome-hd.me/bonus.php*
 // @grant        none
+// @downloadURL  https://github.com/SavageCore/ahd-bonus-calculations/raw/master/src/ahd-bonus-calculations.user.js
 // ==/UserScript==
 //
 /* global document */
