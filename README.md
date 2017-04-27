@@ -6,4 +6,4 @@ Display points remaining and time left at current daily point rate until you can
 
 ![Preview Hover](http://i.imgur.com/57UukOe.png)
 
-##[Install](https://github.com/SavageCore/ahd-bonus-calculations/raw/master/src/ahd-bonus-calculations.user.js)
+[Install](https://github.com/SavageCore/ahd-bonus-calculations/raw/master/src/ahd-bonus-calculations.user.js)
