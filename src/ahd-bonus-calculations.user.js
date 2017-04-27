@@ -23,7 +23,7 @@
 		for (let j = 0; j < row.cells.length; j++) {
 			const col = row.cells[j];
 			if (i === 0 && col.innerText.indexOf('Not enough points!') !== -1) {
-				const cost = parseInt(col.innerText.match(/(.*) Points/g)[0].replace(/^\D+|,/g, ''), 10);
+				const cost = parseInt(col.innerText.match(/(.*) Points/g)[0].replace(/,/g, ''), 10);
 				const remainingPoints = cost - currentPoints;
 				const timeLeft = remainingPoints / pointsPerDay;
 				col.title = 'Days left at current rate: ' + timeLeft;
