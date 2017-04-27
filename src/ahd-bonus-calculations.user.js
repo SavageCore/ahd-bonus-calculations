@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AHD Bonus Calculations
 // @namespace    https://savagecore.eu
-// @version      0.1.0
+// @version      0.1.1
 // @description  Calculate remaining points needed
 // @author       SavageCore
 // @include      http*://awesome-hd.me/bonus.php*
