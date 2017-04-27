@@ -7,9 +7,10 @@
 // @include      http*://awesome-hd.me/bonus.php*
 // @grant        none
 // @downloadURL  https://github.com/SavageCore/ahd-bonus-calculations/raw/master/src/ahd-bonus-calculations.user.js
+// @require      https://raw.githubusercontent.com/zachleat/Humane-Dates/master/humane.js
 // ==/UserScript==
 //
-/* global document */
+/* global document humaneDate */
 
 (function () {
 	'use strict';
@@ -26,7 +27,10 @@
 				const cost = parseInt(col.innerText.match(/(.*) Points/g)[0].replace(/,/g, ''), 10);
 				const remainingPoints = cost - currentPoints;
 				const timeLeft = remainingPoints / pointsPerDay;
-				col.title = 'Days left at current rate: ' + timeLeft;
+				const projectedDate = new Date();
+				projectedDate.setDate(projectedDate.getDate() + timeLeft);
+				col.title = 'Exact days left: ' + timeLeft;
+				col.innerHTML = col.innerHTML.replace(/Not enough points!/, remainingPoints.toLocaleString() + ' Points remaining<br />' + humaneDate(projectedDate) + ' left');
 			}
 		}
 	}
