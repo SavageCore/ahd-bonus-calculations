@@ -1,8 +1,25 @@
 {
+  "name": "ahd-bonus-calculations",
+  "version": "0.1.2",
+  "description": "Display points remaining and time left at current daily point rate until you can afford an exchange",
+  "main": "index.js",
   "scripts": {
     "test": "xo"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavageCore/ahd-bonus-calculations.git"
+  },
+  "keywords": [
+    "userscript"
+  ],
+  "author": "SavageCore",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/SavageCore/ahd-bonus-calculations/issues"
+  },
+  "homepage": "https://github.com/SavageCore/ahd-bonus-calculations#readme",
   "devDependencies": {
-    "xo": "^0.17.0"
+    "xo": "^0.20.3"
   }
 }
