@@ -17,4 +17,4 @@ Click [here](https://github.com/SavageCore/ahd-bonus-calculations/raw/master/src
 
 ## License
 
-UNLICENSE © [SavageCore](https://savagecore.eu)
+The Unlicense © [SavageCore](https://savagecore.eu)
