@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/SavageCore/ahd-bonus-calculations#readme",
   "devDependencies": {
-    "xo": "^0.20.3"
+    "xo": "^0.21.0"
   }
 }
