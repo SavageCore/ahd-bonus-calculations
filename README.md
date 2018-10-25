@@ -14,6 +14,7 @@ Click [here](https://github.com/SavageCore/ahd-bonus-calculations/raw/master/src
 
 - [btn-bonus-calculations](https://github.com/SavageCore/btn-bonus-calculations) - Display points remaining and time left at current daily point rate until you can afford a promotion at BTN
 
+- [ptp-bonus-calculations](https://github.com/SavageCore/ptp-bonus-calculations) - Display points remaining and time left at current daily point rate until you can afford to purchase upload at PTP
 
 ## License
 
