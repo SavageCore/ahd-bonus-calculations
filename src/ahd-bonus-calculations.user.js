@@ -17,7 +17,7 @@
 
 	const pointsPerDay = parseInt(document.querySelector('#content > div > h3').innerText.replace(/^\D+|[,.]/g, ''), 10);
 	if (pointsPerDay > 0) {
-		const currentPoints = parseInt(document.getElementById('pointsStats').innerText.replace(/,/g, ''), 10);
+		const currentPoints = parseInt(document.querySelector('#pointsStats').innerText.replace(/,/g, ''), 10);
 		const table = document.querySelector('#content > div > div > table');
 
 		for (let i = 0; i < table.rows.length; i++) {
