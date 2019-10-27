@@ -28,8 +28,10 @@
 					const cost = parseInt(col.innerText.match(/(.*) Points/g)[0].replace(/,/g, ''), 10);
 					const remainingPoints = cost - currentPoints;
 					const timeLeft = remainingPoints / pointsPerDay;
-					const projectedDate = new Date();
-					projectedDate.setDate(projectedDate.getDate() + timeLeft);
+                    const secondsLeft = (timeLeft - Math.floor(timeLeft)) * 86400
+                    const projectedDate = new Date();
+                    projectedDate.setDate(projectedDate.getDate() + timeLeft);
+                    projectedDate.setSeconds(secondsLeft);
 					col.title = 'Exact days left: ' + timeLeft;
 					col.innerHTML = col.innerHTML.replace(/Not enough points!/, remainingPoints.toLocaleString() + ' Points remaining<br />' + humaneDate(projectedDate) + ' left');
 				}
