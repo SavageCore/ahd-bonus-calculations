@@ -15,9 +15,9 @@
 (function () {
 	'use strict';
 
-	const pointsPerDay = parseInt(document.querySelector('#content > div > h3').textContent.replace(/^\D+|[,.]/g, ''), 10);
+	const pointsPerDay = Number.parseInt(document.querySelector('#content > div > h3').textContent.replace(/^\D+|[,.]/g, ''), 10);
 	if (pointsPerDay > 0) {
-		const currentPoints = parseInt(document.querySelector('#pointsStats').textContent.replace(/,/g, ''), 10);
+		const currentPoints = Number.parseInt(document.querySelector('#pointsStats').textContent.replace(/,/g, ''), 10);
 		const table = document.querySelector('#content > div > div > table');
 
 		for (let i = 0; i < table.rows.length; i++) {
@@ -25,7 +25,7 @@
 			for (let j = 0; j < row.cells.length; j++) {
 				const col = row.cells[j];
 				if (i === 0 && col.textContent.includes('Not enough points!')) {
-					const cost = parseInt(col.textContent.match(/(.*) Points/g)[0].replace(/,/g, ''), 10);
+					const cost = Number.parseInt(col.textContent.match(/(.*) Points/g)[0].replace(/,/g, ''), 10);
 					const remainingPoints = cost - currentPoints;
 					const timeLeft = remainingPoints / pointsPerDay;
 					const secondsLeft = (timeLeft - Math.floor(timeLeft)) * 86400;
